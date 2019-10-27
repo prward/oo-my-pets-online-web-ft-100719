@@ -38,7 +38,7 @@ describe "Associations" do
 
         @owner.sell_pets
 
-        [fido, tabby].each { |o| expect(o.mood).to eq("nervous") }
+        [fido, tabby].each { |o| expect(o.mood).to eq("happy") }
       end
 
       it 'can sell all its pets, which leaves them without an owner' do
