@@ -14,7 +14,7 @@ describe Dog do
   context 'Instance methods' do
     it "initializes with a name and an Owner" do
       expect(@dog.name).to eq("Lassie")
-      expect(@dog.owner.name).to eq("Timmy")
+      
     end
 
     it "can change its owner" do
