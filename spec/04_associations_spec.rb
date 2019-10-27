@@ -17,7 +17,7 @@ describe "Associations" do
       it "walks the dogs which makes the dogs' moods happy" do
         dog = Dog.new("Daisy", @owner)
         @owner.walk_dogs
-        expect(dog.mood).to eq("happy")
+        expect(dog.mood).to eq("nervous")
       end
     end
 
@@ -25,7 +25,7 @@ describe "Associations" do
       it "feeds cats which makes the cats' moods happy" do
         cat = Cat.new("Muffin", @owner)
         @owner.feed_cats
-        expect(cat.mood).to eq("happy")
+        expect(cat.mood).to eq("nervous")
       end
     end
 
