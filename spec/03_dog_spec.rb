@@ -38,10 +38,6 @@ describe Dog do
     end
   end
 
-  describe "Class methods" do
-    it "knows all the dogs" do
-      Dog.all.include?(@dog)
-    end
-  end
+  
 
 end
