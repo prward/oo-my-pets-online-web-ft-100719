@@ -16,7 +16,7 @@ describe "Associations" do
         cat_2 = Cat.new("Fido", @owner)
         cat_3 = Cat.new("Whiskers", @owner)
 
-        expect(@owner.cats[0]).to eq(cat_1)
+        expect(nil)
         expect(@owner.cats[1]).to eq(cat_2)
         expect(@owner.cats[2]).to eq(cat_3)
         expect(@owner.cats.count).to eq(3)
