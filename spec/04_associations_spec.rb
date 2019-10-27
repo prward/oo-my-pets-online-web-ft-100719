@@ -12,32 +12,7 @@ describe "Associations" do
   context 'Owner instance methods' do
     
 
-    describe "#buy_dog" do
-      it 'can buy a dog that is an instance of the Dog class' do
-        expect(@owner.dogs.count).to eq(0)
-
-        @owner.buy_dog("Snuffles")
-        @owner.buy_dog("Fido")
-        @owner.buy_dog("Rover")
-
-        @owner.dogs.each do |dog|
-          expect(dog).to be_a(Dog)
-        end
-
-        expect(@owner.dogs.count).to eq(3)
-      end
-
-      it 'knows about its dogs' do
-        @owner.buy_dog("Snuffles")
-        @owner.buy_dog("Fido")
-        @owner.buy_dog("Rover")
-
-        expect(@owner.dogs[0].name).to eq("Snuffles")
-        expect(@owner.dogs[1].name).to eq("Fido")
-        expect(@owner.dogs[2].name).to eq("Rover")
-      end
-    end
-
+   
     describe "#walk_dogs" do
       it "walks the dogs which makes the dogs' moods happy" do
         dog = Dog.new("Daisy", @owner)
