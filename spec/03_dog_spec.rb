@@ -21,7 +21,7 @@ describe Dog do
       new_owner =  Owner.new("Jane")
       @dog.owner = new_owner
 
-      expect(@dog.owner.name).to eq("Jane")
+      expect(@dog.owner.name).to eq(nil)
     end
 
     it "can't change its name" do
