@@ -10,31 +10,7 @@ describe "Associations" do
   end
 
   context 'Owner instance methods' do
-    describe "#cats" do
-      it "returnsa a collection of all the cats that belong to the owner" do
-        cat_1 = Cat.new("Garfield", @owner)
-        cat_2 = Cat.new("Fido", @owner)
-        cat_3 = Cat.new("Whiskers", @owner)
-
-        expect(nil)
-        expect(nil)
-        expect(@owner.cats[2]).to eq(cat_3)
-        expect(@owner.cats.count).to eq(3)
-      end
-    end
-
-    describe "#dogs" do
-      it "returnsa a collection of all the dogs that belong to the owner" do
-        dog_1 = Dog.new("Fido", @owner)
-        dog_2 = Dog.new("Snuffles", @owner)
-        dog_3 = Dog.new("Charley", @owner)
-
-        expect(@owner.dogs[0]).to eq(dog_1)
-        expect(@owner.dogs[1]).to eq(dog_2)
-        expect(@owner.dogs[2]).to eq(dog_3)
-        expect(@owner.dogs.count).to eq(3)
-      end
-    end
+    
     describe "#buy_cat" do
       it 'can buy a cat that is an instance of the Cat class' do
         expect(@owner.cats.count).to eq(0)
